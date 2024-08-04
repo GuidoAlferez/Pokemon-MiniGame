@@ -1,0 +1,909 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@700&display=swap');
+
+
+html{
+    background-size: 100% 100%;
+}
+
+body{
+    background: linear-gradient( 45deg, blue,  deeppink);
+
+    font-family: 'Bebas Neue', cursive;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.titulo,.subtitulo3 { 
+    color:white;
+    background-color: rgba(0, 0, 0, 0.36);
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    margin:25px;
+    padding:10px 60px 10px 60px;
+}
+.subtitulo,.subtitulo2{
+    background-color: rgba(0, 0, 0, 0.36);
+    font-size: 40px;
+    color: white;
+    padding:3px 15px 3px 15px;
+    margin: 10px 0px 10px 0px;
+}
+
+
+
+#seleccionar_mascota{
+    display:flex;
+    flex-wrap: wrap;
+    margin:auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 1500px;
+}
+.tarjeta{
+    display:flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1400px;
+}
+.carousel.slide.carousel-fade{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px 10px 0px;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1300px !important
+}
+
+.carousel-inner{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px 10px 0px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 300px;
+}
+
+.carousel-item.active{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px 10px 0px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+    margin-right: 0px;
+}
+.carousel-item{
+    display: none;
+    flex-wrap: wrap;
+    padding: 10px 0px 10px 0px;
+    flex-direction: row;
+}
+.tarjeta-de-mokepon{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    width: 240px;
+    height: 240px;
+    background-color:rgba(0, 0, 0, 0.36);
+    padding: 5px 40px 0px 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    justify-content: center;
+    color:white ;
+    gap:10px;
+    font-size: 20px;
+    margin: 30px 30px 0px 30px;
+    border:1px solid  white;
+}
+
+.tarjeta-de-mokepon img{
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+}
+.img-pokemon{
+    width: 100px;
+    height: 100px;
+}
+input{
+    display: none;
+}
+input:checked + label{
+ background-color: rgba(43, 43, 255, 0.663);
+}
+
+/* .carousel-control-next-icon,.carousel-control-prev-icon{
+    background-color: rgba(0, 0, 0, 0.36) ;
+} */
+.botones_para_jugar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 60px;
+    display: flex;
+    gap:100px;
+    margin: 45px;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#boton_ia{
+    margin-top: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 235px;
+}
+#boton_mascota{
+    margin-top: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 235px;
+/*     
+    font-size: 25px;
+    border-radius: 30px; */
+}
+/*----------------------------------------------------------------------------------------------------> */
+.boton-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px;
+    height: 60px;
+    width: 120px;
+    user-select: none;    
+}
+.botones-de-movimiento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 120px;
+    user-select: none;  
+}
+.botones-flechas{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    gap: 20px;
+}
+.botones-up-down-left-right{
+    margin-top:50px;
+}
+#mapa{
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    height: auto;
+    width: 800px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#ver_mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/*------------------------------------------------------------------------------------------>*/
+
+
+#seleccionar_ataque{
+    display:flex;
+    flex-wrap:wrap;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* background-color: red; */
+    width: 1500px;
+}
+button{
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+}
+.botones_ataques{
+    display: flex;
+    gap:35px;
+    margin: 40px;
+    margin-left: 90px;
+    width: 1400px;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.boton_de_ataque{
+    /*padding: 10px 80px 10px 80px;*/
+    width: 170px;
+}
+
+#boton_agua,#boton_fuego,#boton_planta,#boton_tierra,#boton_roca,#boton_lucha,#boton_volador,#boton_veneno,#boton_siniestro,#boton_bicho,#boton_psiquico,#boton_hielo,#boton_dragon,#boton_normal{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-weight:lighter;
+    letter-spacing: 0px;
+    border: 2px solid white;
+    font-size: 25px;
+    color: white;
+    border-radius: 30px;
+    height: 60px;
+    font-family: 'Roboto Condensed', sans-serif;
+    flex-wrap: wrap;
+    align-items: center;
+    text-transform: uppercase;
+    width: 300px;
+}
+
+#boton_agua{
+    background-color: #2481EF;
+}
+#boton_fuego{
+    background-color: #E72324;
+}
+#boton_planta{
+    background-color: #3DA224;
+}
+#boton_tierra{
+    background-color: #92501B;
+}
+#boton_roca{
+    background-color: #B0AA82;
+}
+#boton_lucha{
+    background-color: #FF8100
+}
+#boton_volador{
+    background-color: #82BAEF
+}
+#boton_veneno{
+    background-color: #7e00c7
+}
+#boton_siniestro{
+    background-color: #4F3F3D
+}
+#boton_bicho{
+    background-color: #92A212
+}
+#boton_psiquico{
+    background-color: #EF3F7A
+}
+#boton_hielo{
+    background-color: #3DD9FF
+}
+#boton_dragon{
+    background-color: #7766EE
+}
+#boton_normal{
+    background-color: #656565
+}
+
+.tipo_img{
+    height: 42px;
+    width: 42px;
+    margin: 10px;
+}
+.tipo_img2{
+    height: 29px;
+    width: 29px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+/*contenedor de todo*/
+.ataques{
+    display: flex;
+    flex-wrap: nowrap;
+    /* justify-content: space-evenly; */
+    /*display: grid;
+    grid-template-columns: 100px 100px;*/
+}
+/*contenedor de los 2 ataques*/
+.ataques_jugador,.ataques_enemigo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 340px;
+    margin: 0px 100px 0px 100px;
+    /* margin: 0px -110px; */
+    /* flex-flow: column wrap; */
+    align-content: center;
+}
+/*contenedor de la vida*/
+#vidas_enemigo,#vidas_jugador{
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.36);
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 200px 0px 200px;
+    padding: 10px 50px 5px 50px;
+}
+/*contenedor de la imagen*/
+#mascota_del_jugador,#mascota_del_enemigo{
+    background-color: rgba(0, 0, 0, 0.36);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    margin: 0px 200px 0px 200px;
+    width: 330px;
+    height: 210px;
+   
+}
+/*Imagen*/
+.mascota_del_jugador{
+    display: flex;
+    width: 300px;
+    height: 194px;
+    margin: 0px 200px 0px 200px;
+    padding: 10px 50px 5px 50px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    gap: 10px;
+    font-size: 18px;
+    flex-direction: column;
+
+} 
+/*contenedor del nombre de las mascota*/  
+#mascota_enemigo,#mascota_jugador{
+    color: rgb(255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.36);
+    display: flex;
+    font-size: 28px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 200px 0px 200px;
+    padding: 10px 50px 5px 50px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px ;
+
+    
+}
+/*contenedor de la lista de los ataques de las mascota*/  
+#ataqueDelJugador,#ataqueDelEnemigo{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.36);
+    display: flex;
+    font-size: 22px;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 5px 50px 20px 50px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px ;
+    margin-bottom: 30px;
+
+}
+p{
+    display: flex;
+    font-size: 24px;
+    flex-direction: row;
+    align-items: center;
+    margin: 3px 0px 3px 0px ;
+    justify-content: center;
+    /*flex-wrap:wrap*/
+}
+
+
+#mensajes{
+    background-color: rgba(0, 0, 0, 0.36);
+    color: white;
+    width: 500px;
+    height: 320px;
+    padding: 14px;
+    margin: 0px 0px 30px 0px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#resultado{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0px 20px 0px 20px;
+    font-size: 28px;
+    align-items: center;
+    text-align: center;
+}
+.victoria{
+    font-size: 35px;
+    /* -webkit-text-stroke: 0.4px black; */
+    /* text-shadow: 1px  0px 0px black,
+    0px  1px 0px black,
+   -1px  0px 0px black,
+    0px -1px 0px black; */
+
+    color:green
+}
+.derrota{
+    font-size: 35px;
+    /* -webkit-text-stroke: 0.4px black; */
+    text-shadow: 1px  0px 0px black,
+    0px  1px 0px black,
+   -1px  0px 0px black,
+    0px -1px 0px black;
+    color:red
+}
+#boton_reiniciar{
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    margin-top:0px ;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.boton_reiniciar::before,#boton_mascota::before,#boton_ia::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( 45deg, red, blue, deeppink,blue,red,blue,deeppink,blue);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+/* -----------------------------------------------------------------------------------------------------------------------------------> */
+@keyframes glowing{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+@media (max-width: 900px){
+    .titulo{
+    font-size: 60px;
+    margin: 15px 0px 0px 0px;
+    }
+}
+@media (max-width: 900px){
+    .subtitulo{
+    font-size: 20px;
+    margin: 10px 0px 10px 0px;
+    }
+}
+@media (max-width: 900px){
+    .subtitulo2{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px 0px 0px;
+    }
+}
+@media (max-width: 900px){
+    .subtitulo3{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 0px 0px;
+    }
+}
+@media (max-width: 900px){
+    .tarjeta-de-mokepon{
+        width: 200px;
+        height: 180px;
+        padding: 0px 40px 0px 40px;
+        margin: 5px 30px 5px 30px;
+
+    }
+}
+
+@media (max-width: 900px){
+    .tarjeta-de-mokepon img{
+        width: 100px;
+        height: 100px;
+        border: 1px solid white;
+    }
+}
+@media (max-width: 900px){
+    .carousel-item.active{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+        height: 570px !important;
+        padding: 0px 0px 0px 0px;
+        width: 300px;
+        margin: auto;
+        /* background-color: red;  */
+    }
+}
+
+
+@media (max-width: 900px){
+    .carousel-item{
+        display: none;
+        flex-wrap: wrap !important;
+        align-items: flex-start !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        height: 580px;
+        padding: 0px 0px 0px 0px;
+        width: 300px;
+        /* background-color: green;  */
+    }
+}
+
+@media (max-width: 900px){
+    .carousel-inner{
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        height: 580px !important;
+        padding: 0px 0px 5px 0px;
+        width: 300px ;
+        /* background-color: blue;  */
+    }
+}
+
+@media (max-width: 900px){
+    #carouselExampleFade{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 590px;
+        padding: 0px 0px 5px 0px;
+        width: 400px !important;
+        margin: auto;
+        /* background-color: violet;  */
+    }
+}
+
+@media (max-width: 900px){
+    #contenedor_tarjetas{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 600px;
+        padding: 0px 0px 5px 0px;
+        width: 400px;
+        margin:0px !important;
+        /* background-color: yellow;  */
+    }
+}
+
+@media (max-width: 900px){
+    #boton_mascota.glow{
+    margin: 0px 0px 0px 0px;
+    }
+}
+@media (max-width: 900px){
+    #seleccionar_mascota{
+        height: auto;
+        width: auto;
+        flex-direction: column;
+    }
+}
+@media (max-width: 900px){
+    .botones_para_jugar,#boton_ia.glow,#boton_mascota.glow{
+        font-size: 22px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin:0px;
+        gap:8px;
+        height: 50px;
+        width: auto;
+    }
+}
+
+@media (max-width: 1200px){
+    #mapa{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin:auto;
+        margin-top:70px;
+        height: auto;
+        width: 390px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+@media (max-width: 260px){
+    #ver_mapa div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin:auto;
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width: 900px){
+    .botones-up-down-left-right{
+        /* display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin:auto; */
+        margin-top:140px;
+
+    }
+}
+/* }
+----------------------------------------------------------> */
+@media (max-width: 900px){
+    .contenedor_de_los_ataques{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+
+    }
+}
+@media (max-width: 900px){
+    .botones_ataques{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: 15px 0px 20px 0px;
+        width: auto;
+
+
+    }
+}
+@media (max-width: 900px){
+    #boton_agua,#boton_fuego,#boton_planta,#boton_tierra,#boton_roca,#boton_lucha,#boton_volador,#boton_veneno,#boton_siniestro,#boton_bicho,#boton_psiquico,#boton_hielo,#boton_dragon,#boton_normal{
+        width: 200px;
+        height: 40px;
+    }
+    
+}
+@media (max-width: 900px){
+    .tipo_img,.tipo_img2{
+        height: 22px;
+        width: 22px;
+        margin: 10px 0px 10px 5px;
+    }
+}
+/* ----------------------------------------------------------------------------------------------------------------------> */
+@media (max-width: 900px){
+    #seleccionar_ataque{
+        /* display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: auto;
+        width: auto;
+        margin:auto; */
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+
+        margin:auto;
+        height: auto;
+        width: auto;
+    }
+}
+@media (max-width: 900px){
+    .ataques{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content:none;
+        flex-direction: column-reverse;
+        width: 415px;
+
+        /* height: 1900px;
+        margin: auto;
+        width: auto; */
+    }
+}
+
+@media (max-width: 900px){
+    .ataques_jugador,.ataques_enemigo{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 410px;
+        height: 160px;
+        margin: 0px 0px 0px 0px;
+        /* margin: 0px -110px; */
+        /* flex-flow: column wrap; */
+        align-content:normal;
+
+    }
+}
+@media (max-width: 900px){
+    #vidas_enemigo,#vidas_jugador{
+        border-bottom-left-radius: 12px;
+        border-top-left-radius: 0px ;
+        border-top-right-radius: 0px ;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 0px 0px 5px;
+        padding: 0px 0px 10px 0px;
+        width: 100px;
+        height: 20px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 900px){
+    #mascota_del_jugador,#mascota_del_enemigo{
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        margin: 0px 0px 0px 5px;
+        width: 100px;
+        height: 100px;
+    }
+}
+@media (max-width: 900px){
+    .mascota_del_jugador{
+        width: 80px;
+        height: 90px;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+
+        /* margin: 0px -110px; */
+        /* flex-flow: column wrap; */
+
+    }
+} 
+@media (max-width: 900px){
+    .img_mascotas{
+        height: 80px;
+        width: 80px;
+    }
+}
+@media (max-width: 900px){
+    #mascota_enemigo,#mascota_jugador{
+        margin: 0px 0px 0px 5px;
+        padding: 15px 0px 0px 0px;
+        width: 100px;
+        height: 30px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 12px ;
+        border-top-right-radius:0px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 900px){
+    #ataqueDelJugador,#ataqueDelEnemigo{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        width: 302px;
+        height: 150px;
+        margin-left: 0px;
+        margin-right: 4px;
+        padding: 0px 0px 0px 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 12px;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 0px;  
+        margin-bottom: 0px;
+        font-size: 15px;
+
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: stretch;
+    }
+}
+
+@media (max-width: 900px){
+    #mensajes{
+        background-color: rgba(0, 0, 0, 0.36);
+        color: white;
+        width: 403px;
+        height: 220px;
+        padding: 14px;
+        margin: 0px 0px 10px 0px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+@media (max-width: 900px){
+    .p_ataque{
+        font-size: 15px;
+        height: 18px;
+    }
+}
+@media (max-width: 900px){
+    .p_ataques{
+        font-size: 18px;
+        height: 18px;
+    }
+}
+@media (max-width: 900px){
+    #resultado,.victoria,.derrota{
+        font-size: 24px;
+    }
+}
+@media (max-width: 900px){
+    #boton_reiniciar{
+        height:45px ;
+        width: 120px;
+        padding: 0px 0px;
+    }
+}

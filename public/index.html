@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>POKEMON</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./imagenes/pokeball.jpg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <section id="seleccionar_mascota">
+            <h1 class="titulo">POKEMON!</h1>
+            <h2 class="subtitulo">Selecciona a tu Pokemon</h2>
+
+            <div id="contenedor_tarjetas" class ="tarjeta">
+
+            </div>
+            <div class="botones_para_jugar">
+                <button class="glow" id="boton_ia">Jugar vs. IA</button>
+                <button class="glow" id="boton_mascota">Multijugador</button>
+            </div>
+        </section>
+        
+        <section id="ver_mapa">
+            <h3 class="subtitulo2">Recorre el mapa con tu pokemon</h3>
+            <canvas id="mapa"></canvas>
+            <div class="botones-up-down-left-right">
+                <button class="boton-up" 
+                    ontouchstart="moverArriba()"
+                    ontouchend="detenerMovimiento()"
+                    onmouseup="detenerMovimiento()" 
+                    onmousedown="moverArriba()">↑
+                </button>
+                <div class="botones-flechas">
+                    <button class="botones-de-movimiento"
+                            ontouchstart="moverIzquierda()"
+                            ontouchend="detenerMovimiento()"
+                            onmouseup="detenerMovimiento()" 
+                            onmousedown="moverIzquierda()">←</button>
+                    <button class="botones-de-movimiento"
+                            ontouchstart="moverAbajo()"
+                            ontouchend="detenerMovimiento()"
+                            onmouseup="detenerMovimiento()" 
+                            onmousedown="moverAbajo()">↓</button>
+                    <button class="botones-de-movimiento"
+                            ontouchstart="moverDerecha()"
+                            ontouchend="detenerMovimiento()"
+                            onmouseup="detenerMovimiento()" 
+                            onmousedown="moverDerecha()">→</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="seleccionar_ataque">
+            <h1 class="subtitulo3" id="titulo">POKEMON!🔥💧🌱</h1>
+
+            <h2 class="subtitulo">Elije tu Ataque:</h2>
+
+            <div class="contenedor_de_los_ataques">
+                <div id="contenedor_ataques" class="botones_ataques">
+    
+                </div>
+                <div class="ataques">
+                    
+                    
+                    <div class="ataques_jugador" >
+                        <p id="mascota_jugador"></p>
+                        <div id="mascota_del_jugador" ></div>
+                        <p id="vidas_jugador">Vidas: 3</p>
+                        <div id="ataqueDelJugador"></div>
+                        <!--<p class="texto">Tu mascota tiene vidas</p>-->
+                    </div>
+                    
+                    <div id="mensajes">
+                        <p id="resultado">Mucha Suerte bro!</p>
+                        <section id="reiniciar">
+                            <button id="boton_reiniciar" class="boton_reiniciar">Reiniciar</button>
+                        </section>
+                    </div>
+                    <div class="ataques_enemigo">
+                        <p id="mascota_enemigo"></p>
+                        <div id="mascota_del_enemigo" ></div>
+                        <p id="vidas_enemigo">Vidas: 3</p>
+                        <div id="ataqueDelEnemigo"></div>
+                        <!--<p class="texto">la mascota del enemigo tiene vidas</p>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="./js/mokepon.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+</html>
